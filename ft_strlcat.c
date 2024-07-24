@@ -6,12 +6,12 @@
 /*   By: dsylvain <dsylvain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:29:37 by dan               #+#    #+#             */
-/*   Updated: 2024/07/24 08:56:10 by dsylvain         ###   ########.fr       */
+/*   Updated: 2024/07/24 08:57:59 by dsylvain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <unistd.h>
+
+
 
 int	ft_strlen(const char *str)
 {
