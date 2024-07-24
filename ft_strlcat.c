@@ -6,12 +6,11 @@
 /*   By: dsylvain <dsylvain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:29:37 by dan               #+#    #+#             */
-/*   Updated: 2024/07/24 09:24:38 by dsylvain         ###   ########.fr       */
+/*   Updated: 2024/07/24 09:37:01 by dsylvain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
+#include <unistd.h>
 
 int	ft_strlen(const char *str)
 {
@@ -31,7 +30,6 @@ void	ft_putstr(char *str)
 	while (str[i])
 		write(1, &str[i++], 1);
 }
-
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -58,15 +56,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dst_len + src_len);
 }
 
-//int	main(void)
-//{
-	//char		dst[14] = "hello ";
-	//const char	src[7] = "world !";
-	//
-	//ft_putstr("dst before: ");
-	//ft_putstr(dst);
-	//ft_strlcat(dst, src, 14);
-	//ft_putstr("\ndst after: ");
-	//ft_putstr(dst);
-	//return (0);
-//}
+int	main(void)
+{
+	char		dst[14];
+	const char	src[7] = "world !";
+
+	dst = "hello";
+	ft_putstr("dst before: ");
+	ft_putstr(dst);
+	ft_strlcat(dst, src, 14);
+	ft_putstr("\ndst after: ");
+	ft_putstr(dst);
+	return (0);
+}
