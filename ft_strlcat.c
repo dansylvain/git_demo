@@ -6,11 +6,9 @@
 /*   By: dsylvain <dsylvain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:29:37 by dan               #+#    #+#             */
-/*   Updated: 2024/07/24 08:06:22 by dsylvain         ###   ########.fr       */
+/*   Updated: 2024/07/24 08:15:00 by dsylvain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
